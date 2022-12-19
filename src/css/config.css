@@ -1,9 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Para evitar que os elementos "empurrem" para fora da tela */
+  outline: none;
 }
-
+ul {
+  list-style-type: none;
+}
 /* FONTS */
 
 @font-face {
@@ -31,6 +34,7 @@
   --op-05: rgba(255, 255, 255, 0.05);
   --op-60: rgba(255, 255, 255, 0.6);
 
+  --sp-xxs: 5px;
   --sp-xs: 10px;
   --sp-sm: 16px;
   --sp-md: 20px;
@@ -39,10 +43,20 @@
   --text-sm: 0.75rem; /* 12px */
   --text-md: 1rem; /* 16px */
   --text-lg: 3.5rem; /* 56px */
+
+  --round-sm: 10px;
+}
+
+span {
+  font-weight: 200;
 }
 
 body {
   background-color: var(--black);
   color: var(--white);
   font-family: "CustomPoppins", sans-serif;
+}
+
+.title {
+  margin-bottom: var(--sp-md);
 }
