@@ -27,8 +27,8 @@ ul {
 
 /* HTML */
 :root {
-  --black: #333333;
-  --white: white;
+  --black: #271c66;
+  --white: #ffffff;
   --red: #ffa5a5;
 
   --op-05: rgba(255, 255, 255, 0.05);

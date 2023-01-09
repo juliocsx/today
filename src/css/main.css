@@ -63,6 +63,11 @@ main section {
     color: var(--op-60);
 }
 
+.todo-container ul li.hide {
+    animation: hide .5s forwards;
+    
+}
+
 .todo-finished {
     display: flex;
     flex-direction: column;
@@ -125,14 +130,43 @@ main section {
     transform: scale(1.1);
 }
 
+.emotional-phrase {
+    margin: var(--sp-md) 0;
+}
+
+.emotional-phrase p {
+    font-size: var(--text-sm);
+    color: var(--op-60);
+}
+
+.emotional-phrase p:nth-child(2) {
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-xxs)
+}
+
 @keyframes show {
     from {
         opacity: 0;
-        transform: translateX(-20px);
+        transform: translateX(-50px);
     }
     to {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+@keyframes hide {
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-50px);
     }
 }
 
